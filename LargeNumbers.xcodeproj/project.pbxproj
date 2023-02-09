@@ -13,6 +13,7 @@
 		1EC83C3F2993F216005D22B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC83C3D2993F216005D22B7 /* Main.storyboard */; };
 		1EC83C412993F217005D22B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC83C402993F217005D22B7 /* Assets.xcassets */; };
 		1EC83C442993F217005D22B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC83C422993F217005D22B7 /* LaunchScreen.storyboard */; };
+		1EC83C5429953381005D22B7 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC83C5329953381005D22B7 /* BigInt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC83C5429953381005D22B7 /* BigInt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = LargeNumbers;
+			packageProductDependencies = (
+				1EC83C5329953381005D22B7 /* BigInt */,
+			);
 			productName = LargeNumbers;
 			productReference = 1EC83C342993F216005D22B7 /* LargeNumbers.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 1EC83C2B2993F216005D22B7;
+			packageReferences = (
+				1EC83C5229953381005D22B7 /* XCRemoteSwiftPackageReference "BigInt" */,
+			);
 			productRefGroup = 1EC83C352993F216005D22B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1EC83C5229953381005D22B7 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1EC83C5329953381005D22B7 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EC83C5229953381005D22B7 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1EC83C2C2993F216005D22B7 /* Project object */;
 }
